@@ -1,0 +1,15 @@
+USUARIOS
+Vic-a23-234-false
+wilfre-v1-123-true-123
+PELICULAS
+123-HP-Cultural-v1-12/12/2020
+1-SA-Drama--
+6-Love, Rosie-Drama--
+INDEXPELICULA
+1-1
+2-6
+0-123
+INDEXUSUARIO
+1-1-v
+0-23-a
+FIN
