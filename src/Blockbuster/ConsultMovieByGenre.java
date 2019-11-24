@@ -93,7 +93,7 @@ public class ConsultMovieByGenre extends javax.swing.JFrame {
         for (int i = 0; i < Cartelera.movies.length; i++) {
             if(Cartelera.movies[i].getGenre().equals(genre)){
                 encontrada=true;
-                info=info+Cartelera.movies[i].getName()+" ("+Cartelera.movies[i].getGenre()+") ID: "+
+                info=info+"-"+Cartelera.movies[i].getName()+" ("+Cartelera.movies[i].getGenre()+") ID: "+
                 Cartelera.movies[i].getID()+"\n";
             }
         }

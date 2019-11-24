@@ -106,7 +106,7 @@ public class ConsultMoviesByUser extends javax.swing.JFrame {
                 if(Cartelera.users[posUser].firstMovie){
                     String info="PELÍCULAS ALQUILADAS: \n";
                     for (int i = 0; i < Cartelera.users[posUser].peliculas.length; i++) {
-                        info=info+Cartelera.users[posUser].peliculas[i].getName()+" ("+Cartelera.users[posUser].peliculas[i].getGenre()+
+                        info=info+"-"+Cartelera.users[posUser].peliculas[i].getName()+" ("+Cartelera.users[posUser].peliculas[i].getGenre()+
                                 "). ID: "+Cartelera.users[posUser].peliculas[i].getID()+"\n";
                     }
                     this.userMovies.setText(info);

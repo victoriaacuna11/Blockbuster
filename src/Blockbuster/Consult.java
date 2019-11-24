@@ -66,7 +66,7 @@ public class Consult extends javax.swing.JFrame {
         });
         getContentPane().add(btnMovieUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, -1, 53));
 
-        btnMovieDate.setText("PELÍCULAS ALQUILADAS POR UN USUARIO");
+        btnMovieDate.setText("PELÍCULAS ALQUILADAS EN CIERTA FECHA");
         btnMovieDate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMovieDateActionPerformed(evt);

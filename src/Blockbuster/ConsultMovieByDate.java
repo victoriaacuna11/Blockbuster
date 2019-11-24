@@ -89,8 +89,13 @@ public class ConsultMovieByDate extends javax.swing.JFrame {
             for (int i = 0; i < Cartelera.movies.length; i++) {
                 if(Cartelera.movies[i].getDate().equals(this.movieDate.getText())){
                     encontrada=true;
-                    movies=movies+Cartelera.movies[i].getName()+" ("+Cartelera.movies[i].getGenre()+") ID: "+
-                            Cartelera.movies[i].getID()+". Alquilada por CI usuario: "+Cartelera.movies[i].getCI()+"\n";
+                    // Buscar posición del usuario que alquiló la película.
+                    int posU = Cartelera.buscarUsuario(Integer.parseInt(Cartelera.movies[i].getCI().substring(1)), 
+                            Cartelera.movies[i].getCI().substring(0, 1));
+                    movies=movies+"-"+Cartelera.movies[i].getName()+" ("+Cartelera.movies[i].getGenre()+") ID: "+
+                            Cartelera.movies[i].getID()+".\nAlquilada por: "+ 
+                            Cartelera.users[posU].getName()+" (CI: "+
+                            Cartelera.users[posU].getCI()+")\n";
                 }
             }
             if(encontrada){

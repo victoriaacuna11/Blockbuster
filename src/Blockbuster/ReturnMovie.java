@@ -158,11 +158,6 @@ public class ReturnMovie extends javax.swing.JFrame {
                             }
                             Cartelera.users[posUser].peliculas=p;
                         }
-                        
-                        for (int i = 0; i < Cartelera.users[posUser].peliculas.length; i++) {
-                            System.out.println(Cartelera.users[posUser].peliculas[i].getName());
-                        }
-                        
                         this.setVisible(false);
                     } else {
                         JOptionPane.showMessageDialog(this, "Su usuario no ha reservado la película que eligió.\nPor favor, revise.", "ERROR", JOptionPane.ERROR_MESSAGE);

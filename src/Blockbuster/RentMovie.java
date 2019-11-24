@@ -154,9 +154,9 @@ public class RentMovie extends javax.swing.JFrame {
                                 Cartelera.users[posUser].peliculas = p;
                             }
 
-                            for (int i = 0; i < Cartelera.users[posUser].peliculas.length; i++) {
-                                System.out.println(Cartelera.users[posUser].peliculas[i].getName());
-                            }
+//                            for (int i = 0; i < Cartelera.users[posUser].peliculas.length; i++) {
+//                                System.out.println(Cartelera.users[posUser].peliculas[i].getName());
+//                            }
                             this.setVisible(false);
                         } else {
                             String literalAux = Cartelera.movies[pos].getCI().substring(0, 1);
